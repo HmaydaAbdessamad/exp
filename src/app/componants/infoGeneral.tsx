@@ -23,7 +23,7 @@ const Header = () => {
                 <h1 className="text-xl font-bold">Date: {formattedDate}</h1>
             </div>
 
-            <div className=" flex flex-col md:flex-row justify-start md:justify-around items-center mx-5 ">
+            <div className=" flex flex-col items-start mx-3 md:flex-row  md:justify-around md:items-center md:mx-5 ">
 
                 <div className="flex flex-col   gap-3">
                     <h1 className="text-xl font-bold">N Bogie I</h1>
