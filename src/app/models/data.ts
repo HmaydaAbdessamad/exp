@@ -46,7 +46,8 @@ import {ESSIEUU} from "@/app/models/enregistrement";
              heauteur: 7
          },
          ei: 15
-     },   {
+     },
+     {
          eg: {
              diametre: 12,
              epaisseur: 3,
@@ -60,7 +61,8 @@ import {ESSIEUU} from "@/app/models/enregistrement";
              heauteur: 7
          },
          ei: 15
-     },   {
+     },
+     {
          eg: {
              diametre: 12,
              epaisseur: 3,
@@ -74,7 +76,8 @@ import {ESSIEUU} from "@/app/models/enregistrement";
              heauteur: 7
          },
          ei: 15
-     },   {
+     },
+     {
          eg: {
              diametre: 12,
              epaisseur: 3,
@@ -88,7 +91,8 @@ import {ESSIEUU} from "@/app/models/enregistrement";
              heauteur: 7
          },
          ei: 15
-     },   {
+     },
+     {
          eg: {
              diametre: 12,
              epaisseur: 3,

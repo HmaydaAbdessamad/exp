@@ -6,7 +6,7 @@ import {fakedata} from "@/app/models/data";
 const Tableau = () => {
 
     const enregistrementApresCalculEA:ESSIEUU[]=fakedata.map((item)=>(
-        {...item,ea:item.ei+item.eg.epaisseur+item.ed.epaisseur}
+        {...item,ea:item.ei+item.eg.epaisseur+item.ed.epaisseur as number}
     ))
     return (
 
@@ -102,7 +102,7 @@ const Tableau = () => {
                 </th>
                 {enregistrementApresCalculEA.map((item, index) => (
 
-                    <td colSpan="2" key={index} className="rounded-lg bg-white hover:bg-white p-5 focus:bg-white ">
+                    <td colSpan={2} key={index} className="rounded-lg bg-white hover:bg-white p-5 focus:bg-white ">
                         {item.ei}
                     </td>
 
@@ -116,7 +116,7 @@ const Tableau = () => {
                 </th>
                 {enregistrementApresCalculEA.map((item, index) => (
 
-                    <td colSpan="2" key={index} className="rounded-lg bg-white hover:bg-white p-5 focus:bg-white ">
+                    <td colSpan={2} key={index} className="rounded-lg bg-white hover:bg-white p-5 focus:bg-white ">
                         {item.ea}
                     </td>
 
