@@ -14,15 +14,41 @@ const Tableau = () => {
         }))
     );
 
-    const handleInputChange = (event, index, property) => {
-        const updatedEnregistrement = [...enregistrementApresCalculEA]; // Create copy for immutability
-        updatedEnregistrement[index][property] = event.target.valueAsNumber; // Use valueAsNumber for type safety
+    const handleInputChange = (
+        event: React.ChangeEvent<HTMLInputElement>,
+        index: number,
+        property: string
+    ) => {
+        const updatedEnregistrement = [...enregistrementApresCalculEA];
+
+        // Split property string into object path segments
+        const [propertyName, subPropertyName] = property.split('.');
+
+        // Option 1: Dot Notation (Recommended)
+        if (propertyName === 'eg') {
+            updatedEnregistrement[index].eg[subPropertyName] = event.target.valueAsNumber;
+        } else if (propertyName === 'ed') {
+            updatedEnregistrement[index].ed[subPropertyName] = event.target.valueAsNumber;
+        } else {
+         updatedEnregistrement[index].ei=event.target.valueAsNumber
+        }
+
+
+
+        // Recalculate ea for the modified record
+        updatedEnregistrement[index].ea =
+            updatedEnregistrement[index].ei +
+            updatedEnregistrement[index].eg.epaisseur +
+            updatedEnregistrement[index].ed.epaisseur;
+
         setEnregistrementApresCalculEA(updatedEnregistrement);
+        console.log(updatedEnregistrement[0]);
         console.log(
             `Value of ${property} for index ${index} changed to:`,
-            updatedEnregistrement[index][property]
+            updatedEnregistrement[index][propertyName][subPropertyName]
         );
     };
+
 
     return (
 
