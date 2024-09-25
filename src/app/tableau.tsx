@@ -3,6 +3,16 @@ import React, {useState} from 'react';
 import {ESSIEUU} from "@/app/models/enregistrement";
 import {fakedata} from "@/app/models/data";
 
+export function bg(ea:number):string{
+
+    if(ea>=1411 && ea<=1425){
+        return "bg-amber-200"
+    }else if(ea>=1410 && ea<=1426){
+        return "bg-red-300"
+    }else {
+        return "bg-white"
+    }
+}
 
 
 const Tableau = () => {
@@ -206,7 +216,7 @@ const Tableau = () => {
                 </th>
                 {enregistrementApresCalculEA.map((item, index) => (
 
-                    <td colSpan={2} key={index} className="rounded-lg bg-white hover:bg-white p-5 focus:bg-white ">
+                    <td colSpan={2} key={index} className={ `rounded-lg  ${bg(item.ea)} hover:bg-white p-5 focus:bg-white `}>
                         {item.ea}
                     </td>
 
