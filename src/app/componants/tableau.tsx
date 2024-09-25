@@ -8,6 +8,7 @@ import {bgEA, bgEI, bgEpaisseur, bgHauteur, bgQR} from "@/app/componants/uril";
 
 
 
+
     const Tableau = () => {
 
     const [enregistrementApresCalculEA, setEnregistrementApresCalculEA] = useState(
@@ -145,7 +146,7 @@ import {bgEA, bgEI, bgEpaisseur, bgHauteur, bgQR} from "@/app/componants/uril";
         className=" bg-transparent  text-gray-900 text-center  rounded-lg  block w-full p-2.5 "
         required/>
         </td>
-        <td  className={`rounded-lg  ${bgHauteur(item.ed.qr)} min-w-20` }>
+        <td  className={`rounded-lg  ${bgQR(item.ed.qr)} min-w-20` }>
 
         <input type="number"  defaultValue={item.ed.qr}
         name={`ed.qr-${index}`}

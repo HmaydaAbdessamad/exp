@@ -17,9 +17,15 @@ const Header = () => {
             <div className=" flex flex-row justify-between items-center mx-2  md:mx-5 ">
 
                 <div className="flex flex-col md:gap-3 gap-1">
+                    <h1 className="md:text-xl font-bold">N Machine </h1>
+                    <input className="border-2 border-black" type="text "/>
+                </div>
+
+                <div className="flex flex-col md:gap-3 gap-1">
                     <h1 className="md:text-xl font-bold">Relevé N</h1>
                     <input className="border-2 border-black" type="text "/>
                 </div>
+
                 <h1 className="text-xl font-bold">Date: {formattedDate}</h1>
             </div>
 
