@@ -50,13 +50,13 @@ import {ESSIEUU} from "@/app/models/enregistrement";
      {
          eg: {
              diametre: 12,
-             epaisseur: 3,
+             epaisseur: 22,
              qr: 6,
              heauteur: 10
          },
          ed: {
-             diametre: 8,
-             epaisseur: 1,
+             diametre: 13,
+             epaisseur: 33,
              qr: 4,
              heauteur: 7
          },

@@ -27,22 +27,22 @@ const Tableau = () => {
                 ))}
             </tr>
             </thead>
-            <tbody>
-            <tr className=" my-4">
-                <th scope="row" className="px-6 py-4 text-xl text-black whitespace-nowrap dark:text-white">
+            <tbody className="text-center">
+            <tr className=" my-4 text-center">
+                <th scope="row" className=" text-xl text-black whitespace-nowrap dark:text-white">
                     Diametre
                 </th>
                 {enregistrementApresCalculEA.map((item, index) => (
                     <React.Fragment key={index}>
                         <td className=" rounded-lg  hover:bg-white focus:bg-white ">
 
-                            <input type="number" name="eg.diametre" value= {item.eg.diametre}
-                                   className="bg-gray-50 border border-gray-300 text-gray-900  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            <input type="number" name="eg.diametre" defaultValue = {item.eg.diametre}
+                                   className="bg-gray-50 border border-gray-300 text-gray-900  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-center"
                                     required/>
                         </td>
                         <td className=" rounded-lg hover:bg-white focus:bg-white">
-                            <input type="number" name="ed.diametre" value={item.ed.diametre}
-                                   className="bg-gray-50 border border-gray-300 text-gray-900  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            <input type="number" name="ed.diametre" defaultValue={item.ed.diametre}
+                                   className="bg-gray-50 border border-gray-300 text-gray-900  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-center"
                                    required/>
 
                         </td>
@@ -51,9 +51,7 @@ const Tableau = () => {
 
 
             </tr>
-
-
-            <tr className=" my-4">
+            <tr className=" my-4 text-center">
                 <th scope="row" className="px-6 py-4 text-xl text-black whitespace-nowrap dark:text-white">
                     Epaisseur
                 </th>
@@ -61,12 +59,12 @@ const Tableau = () => {
                     <React.Fragment key={index}>
                         <td className="rounded-lg  hover:bg-white focus:bg-white">
 
-                            <input type="number" name="eg.epaisseur" value={item.eg.epaisseur}
+                            <input type="number" name="eg.epaisseur" defaultValue={item.eg.epaisseur}
                                    className="bg-gray-50 border border-gray-300 text-gray-900  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                                    required/>
                         </td>
                         <td className="rounded-lg  hover:bg-white focus:bg-white">
-                            <input type="number" name="ed.epaisseur" value={item.ed.epaisseur}
+                            <input type="number" name="ed.epaisseur" defaultValue={item.ed.epaisseur}
                                    className="bg-gray-50 border border-gray-300 text-gray-900  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                                    required/>
                         </td>
@@ -75,7 +73,7 @@ const Tableau = () => {
 
 
             </tr>
-            <tr className=" my-4">
+            <tr className=" my-4 text-center">
                 <th scope="row" className="px-6 py-4 text-xl text-black whitespace-nowrap dark:text-white">
                     QR
                 </th>
@@ -83,13 +81,13 @@ const Tableau = () => {
                     <React.Fragment key={index}>
                         <td className="rounded-lg  hover:bg-white focus:bg-white">
 
-                            <input type="number" name="eg.qr" value={item.eg.qr}
+                            <input type="number" name="eg.qr" defaultValue={item.eg.qr}
                                    className="bg-gray-50 border border-gray-300 text-gray-900  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                                    required/>
                         </td>
                         <td className="rounded-lg  hover:bg-white focus:bg-white">
 
-                            <input type="number" name="ed.qr" value={item.ed.qr}
+                            <input type="number" name="ed.qr" defaultValue={item.ed.qr}
                                    className="bg-gray-50 border border-gray-300 text-gray-900  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                                    required/>
                         </td>
@@ -98,7 +96,7 @@ const Tableau = () => {
 
 
             </tr>
-            <tr className=" my-4">
+            <tr className=" my-4 text-center">
                 <th scope="row" className="px-6 py-4 text-xl text-black whitespace-nowrap dark:text-white">
                     Hauteur
                 </th>
@@ -106,13 +104,13 @@ const Tableau = () => {
                     <React.Fragment key={index}>
                         <td className="rounded-lg  hover:bg-white focus:bg-white">
 
-                            <input type="number" name="eg.heauteur" value={item.eg.heauteur}
+                            <input type="number" name="eg.heauteur" defaultValue={item.eg.heauteur}
                                    className="bg-gray-50 border border-gray-300 text-gray-900  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                                    required/>
                         </td>
                         <td className="rounded-lg  hover:bg-white focus:bg-white">
 
-                            <input type="number" name="ed.heauteur" value={item.ed.heauteur}
+                            <input type="number" name="ed.heauteur" defaultValue={item.ed.heauteur}
                                    className="bg-gray-50 border border-gray-300 text-gray-900  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                                    required/>
                         </td>
@@ -121,7 +119,7 @@ const Tableau = () => {
 
 
             </tr>
-            <tr className=" my-4">
+            <tr className=" my-4 text-center">
                 <th scope="row" className="px-6 py-4   text-black text-xl whitespace-nowrap dark:text-white">
                     EI
                 </th>
@@ -129,8 +127,8 @@ const Tableau = () => {
 
                     <td colSpan={2} key={index} className="  hover:bg-white p-5 focus:bg-white ">
 
-                        <input type="number" name="ei" value={item.ei}
-                               className="bg-gray-50 border border-gray-300 text-gray-900  w-auto text-center rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                        <input type="number" name="ei" defaultValue={item.ei}
+                               className="bg-gray-50 border border-gray-300 text-gray-900   text-center rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                                required/>
                     </td>
 
@@ -138,7 +136,7 @@ const Tableau = () => {
 
 
             </tr>
-            <tr className=" my-4">
+            <tr className=" my-4 text-center">
                 <th scope="row" className="px-6 py-4   text-black text-xl whitespace-nowrap dark:text-white">
                     EA
                 </th>

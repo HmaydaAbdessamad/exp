@@ -1,8 +1,8 @@
 
-import Tableau from "@/app/tableau";
+
 
 export default function Home() {
   return (
-<Tableau></Tableau>
+      <input id="number" type="number" defaultValue="42"/>
   );
 }
