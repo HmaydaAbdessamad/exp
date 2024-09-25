@@ -23,16 +23,16 @@ const Header = () => {
                 <h1 className="text-xl font-bold">Date: {formattedDate}</h1>
             </div>
 
-            <div className=" flex flex-col md:flex-row justify-around items-center mx-5 ">
+            <div className=" flex flex-col md:flex-row justify-start md:justify-around items-center mx-5 ">
 
                 <div className="flex flex-col   gap-3">
                     <h1 className="text-xl font-bold">N Bogie I</h1>
-                    <input className="border-2 border-black text-center" defaultValue={"552-1"} type="text "/>
+                    <input className="border-2 border-black text-center"  type="text "/>
                 </div>
 
                 <div className="flex flex-col   gap-3">
                     <h1 className="text-xl font-bold">N Bogie II</h1>
-                    <input className="border-2 border-black text-center" defaultValue={"552-2"} type="text "/>
+                    <input className="border-2 border-black text-center" type="text "/>
                 </div>
 
                 <div className="flex flex-col   gap-3">
@@ -42,14 +42,14 @@ const Header = () => {
 
                 <div className="flex flex-col   gap-3">
                     <h1 className="text-xl font-bold">Index KM</h1>
-                    <input className="border-2 border-black text-center" defaultValue={37145} type="text "/>
+                    <input className="border-2 border-black text-center" type="text "/>
 
                 </div>
             </div>
             <div className=" flex flex-col  items-start  gap-4 mx-5 ">
                 <label htmlFor="Observation" className="text-xl text-black font-bold">Observation:</label>
 
-                <textarea id="Observation" name="Observation" className="w-1/2 h-auto border border-3 border-black">
+                <textarea id="Observation" name="Observation" className="w-full md:w-1/2 h-auto border border-3 border-black">
 
                 </textarea>
             </div>
