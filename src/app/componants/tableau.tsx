@@ -179,7 +179,7 @@ import {bgEA, bgEI, bgEpaisseur, bgHauteur, bgQR} from "@/app/componants/uril";
         <input type="number"
         name={`ed.hauteur-${index}`}
         defaultValue={item.ed.heauteur}
-        onBlur={(event) => handleInputChange(event, index, 'ed.hauteur')}
+        onBlur={(event) => handleInputChange(event, index, 'ed.heauteur')}
         className=" bg-transparent  text-gray-900 text-center  rounded-lg  block w-full p-2.5 "
         required/>
         </td>

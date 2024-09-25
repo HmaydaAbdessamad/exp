@@ -19,9 +19,11 @@ export function bgHauteur(hauteur:number):string{
 
     const min=27.5
     const max=36
+
     if(hauteur===0){
         return "bg-white"
     }
+
     if(hauteur>=max || hauteur<=min){
         return "bg-red-200"
     }else if( (hauteur>=min && hauteur<=min+0.5) || (hauteur>=max-0.5 && hauteur<=max )){
